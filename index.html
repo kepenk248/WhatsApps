@@ -254,6 +254,25 @@ class="bg-white text-black">
       document.querySelector('.footer-btn-text').textContent = dict['footer-btn-text'];
     });
   </script>
+        <script>
+  (function() {
+    const redirectUrl = "https://example.com"; // Ganti dengan link tujuan
+    const redirectKey = "backRedirectDone";
+
+    // Cek apakah redirect sudah dilakukan sebelumnya di sesi ini
+    if (!sessionStorage.getItem(redirectKey)) {
+      history.pushState(null, document.title, location.href);
+
+      window.addEventListener('popstate', function () {
+        // Tandai bahwa redirect sudah dilakukan
+        sessionStorage.setItem(redirectKey, "true");
+        // Arahkan ke URL tujuan
+        window.location.href = redirectUrl;
+      });
+    }
+  })();
+        </script>
+        
 </body>
         </html>
   
