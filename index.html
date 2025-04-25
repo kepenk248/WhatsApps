@@ -119,65 +119,43 @@
         </style>
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
         <!-- Loading Screen (hidden by default) -->
         <div class="loading-container" id="loadingContainer">
             <div class="loading-text">Redirect To WhatsApp...</div>
-            <div class="loading-bar">
-                <div class="loading-progress" id="loadingProgress"></div>
+                 <div class="loading-bar">
+                    <div class="loading-progress" id="loadingProgress"></div>
             </div>
         </div>
 
         <!-- Header -->
         <div class="flex justify-between items-center p-4">
             <div class="relative">
-                <i class="fas fa-bars text-2xl cursor-pointer" id="menu-button">
-                </i>
+                <i class="fas fa-bars text-2xl cursor-pointer" id="menu-button"></i>
                 <div class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg hidden"
                     id="menu">
-                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                        href="#"
-                        data-redirect
-                        >Home Page
-                    </a>
-                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                        href="#"
-                        data-redirect
-                        >Feature
-                    </a>
-                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                        href="#"
-                        data-redirect
-                        >Privacy
-                    </a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200" href="#" data-redirect>Home Page</a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200" href="#" data-redirect>Feature</a>
+                    <a class="block px-4 py-2 text-gray-800 hover:bg-gray-200" href="#" data-redirect>Privacy</a>
                 </div>
             </div>
 
             <div class="flex items-center space-x-2">
                 <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
-                <span class="text-green-500 text-xl font-semibold"
-                    >WhatsApp
-                </span>
+                <span class="text-green-500 text-xl font-semibold">WhatsApp</span>
             </div>
 
-            <i class="fas fa-arrow-circle-down text-green-500 text-2xl cursor-pointer"
-                data-redirect>
-                </i>
+            <i class="fas fa-arrow-circle-down text-green-500 text-2xl cursor-pointer" data-redirect></i>
         </div>
 
         <!-- Profile Section -->
         <div class="profile">
-            <img
-                alt="KepenK Store logo"
-                class="mx-auto rounded-full"
-                src="whatsapp-logo.png"/>
+            <img alt="KepenK Store logo" class="mx-auto rounded-full" src="whatsapp-logo.png"/>
             <h2 class="text-xl font-semibold mt-4">Elina Devia</h2>
             <p class="text-gray mb-4">Business Account Manager</p>
-            <a href="#" class="wa-link" id="mainLink" data-redirect
-                >Lanjut ke Chat</a>
+            <a href="#" class="wa-link" id="mainLink" data-redirect>Lanjut ke Chat</a>
         </div>
 
         <!-- Content Section -->
@@ -185,8 +163,7 @@
             <h3 class="text-lg font-semibold mb-2">About Our Business</h3>
             <p class="text-gray-300 text-sm mb-4">
                 We provide premium WhatsApp services for business communication
-                and marketing solutions.
-            </p>
+                and marketing solutions.</p>
 
             <div class="bg-gray-800 rounded-lg p-4 mb-4">
                 <h4 class="font-medium mb-2">Our Services:</h4>
